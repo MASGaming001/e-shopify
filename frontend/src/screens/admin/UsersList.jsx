@@ -37,7 +37,7 @@ const UsersList = () => {
     return (
         <div>
             <MetaData title="Users" />
-            <h1 className="inline-block text-2xl font-bold text-red-700">Users</h1>
+            <h1 className="inline-block text-2xl font-bold text-black">Users</h1>
             <div className="w-1/3 flex my-4">
                 <input
                 type="text"
