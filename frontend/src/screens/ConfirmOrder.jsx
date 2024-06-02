@@ -4,7 +4,7 @@ import { ImSpinner8 } from "react-icons/im";
 import { useDispatch, useSelector } from "react-redux";
 import toast from "react-hot-toast";
 import axios from "axios";
-import logo  from "../assets/sparkJewelleryLogo.png";
+import logo  from "../assets/eshopifyLogo.png";
 import MetaData from "../components/MetaData.js";
 
 const ConfirmOrder = () => {
