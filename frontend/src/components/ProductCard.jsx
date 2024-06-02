@@ -7,7 +7,7 @@ const ProductCard = ({ product }) => {
     return(
         <Link to={`/product/${product._id}`} key={product.id} className="rounded-lg shadow-md overflow-hidden bg-white">
             <div className="relative">
-                <img className="w-full h-48 object-cover" src={product.images[0].imageUrl} alt={dummyImage} />
+                <img className="w-full h-48 object-contain" src={product.images[0].imageUrl} alt={dummyImage} />
                 <div className="shadow flex items-center justify-center bg-gray-100 text-sm rounded-full absolute bottom-0 left-0 m-4 px-2">
                     <span>{product.ratingsCount}</span>
                     <FaStar className="text-yellow-500" />

@@ -8,7 +8,7 @@ import toast from "react-hot-toast";
 import { ADMIN_CREATE_PRODUCT_RESET } from "../../constants/ProductConstant";
 import MetaData from "../../components/MetaData";
 
-const collections = ["Mobiles", "Tablets", "Earbuds", "Watches", "Laptops"];
+const collections = ["Mobiles", "Tablets", "Earbuds", "Smart Watches", "Laptops"];
 
 const CreateProduct = () => {
     const { loading, error, success } = useSelector((state) => state.productCreateReducer);
