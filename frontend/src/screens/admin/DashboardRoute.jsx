@@ -5,7 +5,6 @@ import UsersList from './UsersList';
 import CreateProduct from './CreateProduct';
 import ProductsList from './ProductsList';
 import OrdersList from './OrdersList';
-import ReviewsList from './ReviewsList';
 import UpdateProduct from './UpdateProduct';
 import UpdateOrder from './UpdateOrder';
 
@@ -23,7 +22,6 @@ const DashboardRoute = () => {
             <NavLink to={"/account/admin/products"} className={`block text-base rounded my-1 p-4 hover:bg-gray-200 ${location.pathname === '/account/admin/products' ? 'bg-gray-200' : ''}`}>Products</NavLink>
             <NavLink to={"/account/admin/product/new"} className={`block text-base rounded my-1 p-4 hover:bg-gray-200 ${location.pathname === '/account/admin/product/new' ? 'bg-gray-200' : ''}`}>Create Product</NavLink>
             <NavLink to={"/account/admin/orders"} className={`block text-base rounded my-1 p-4 hover:bg-gray-200 ${location.pathname === '/account/admin/orders' ? 'bg-gray-200' : ''}`}>Orders</NavLink>
-            {/* <NavLink to={"/account/admin/reviews"} className={`block text-base rounded my-1 p-4 hover:bg-gray-200 ${location.pathname === '/account/admin/reviews' ? 'bg-gray-200' : ''}`}>Reviews</NavLink> */}
             <NavLink to={"/account/admin/users"} className={`block text-base rounded my-1 p-4 hover:bg-gray-200 ${location.pathname === '/account/admin/users' ? 'bg-gray-200' : ''}`}>Users</NavLink>
         </div>
 
@@ -36,7 +34,6 @@ const DashboardRoute = () => {
                 <Route exact path="/product/:productId/update" element={<UpdateProduct />} />
                 <Route exact path="/orders" element={<OrdersList />} />
                 <Route exact path="/order/:orderId/update" element={<UpdateOrder />} />
-                {/* <Route exact path="/reviews" element={<ReviewsList />} /> */}
                 <Route exact path="/users" element={<UsersList />} />
             </Routes>
         </div>
