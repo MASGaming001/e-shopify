@@ -21,11 +21,9 @@ import CreateReview from './screens/CreateReview';
 import DashboardRoute from './screens/admin/DashboardRoute';
 import PrivateRoute from './components/PrivateRoute';
 import { loadUser } from './actions/UserAction';
-// import Loader from './components/Loader';
 import store from './store';
 import Products from './screens/Products';
 import OrderSuccess from './screens/OrderSuccess';
-import OrderFail from './screens/OrderFail';
 
 const App = () => {
     useEffect(() => {
@@ -64,7 +62,6 @@ const App = () => {
                 <Route exact path='/account/admin/*' element={<PrivateRoute Component={DashboardRoute} />} />
 
                 <Route exact path='/order/success' element={<OrderSuccess />} />
-                <Route exact path='/order/fail' element={<OrderFail />} />
             </Routes>
             <Footer/>
         </div>
