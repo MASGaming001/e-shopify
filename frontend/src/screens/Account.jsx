@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import boy from "../assets/profile/boy.png";
+import boy from "../assets/profile/person.png";
 import girl from "../assets/profile/girl.png";
 import man from "../assets/profile/man.png";
 import woman from "../assets/profile/woman.png";
