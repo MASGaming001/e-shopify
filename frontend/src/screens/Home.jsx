@@ -9,6 +9,11 @@ import Loader from "../components/Loader";
 import banner from "../assets/homebanner.webp";
 import banner1 from "../assets/b1.jpg";
 import banner2 from "../assets/b2.jpg";
+import mobiles from "../assets/mobiles.webp";
+import tablets from "../assets/tablets.webp";
+import earbuds from "../assets/earbuds.webp";
+import laptops from "../assets/laptops.webp";
+import watches from "../assets/watches.webp";
 const images = [banner];
 
 const specialBanners = [
@@ -22,37 +27,31 @@ const specialBanners = [
 
 const collections = [
     {
-        image: "https://res.cloudinary.com/df9vmrdna/image/upload/v1714291885/SPARK%20Jewellery/collections/pendants_wndu5s.webp",
-        name: "Pendants",
+        image: mobiles,
+        name: "Mobiles",
     },
+
     {
-        image: "https://res.cloudinary.com/df9vmrdna/image/upload/v1714291888/SPARK%20Jewellery/collections/rings_hdhzsv.webp",
-        name: "Rings",
+        image: tablets,
+        name: "Tablets",
     },
+
     {
-        image: "https://res.cloudinary.com/df9vmrdna/image/upload/v1714291877/SPARK%20Jewellery/collections/earrings_srxoi9.webp",
-        name: "Earrings",
+        image: laptops,
+        name: "Laptops",
     },
+
     {
-        image: "https://res.cloudinary.com/df9vmrdna/image/upload/v1714291802/SPARK%20Jewellery/collections/bracelets_w33sy6.webp",
-        name: "Bracelets",
+        image: earbuds,
+        name: "Earbuds",
     },
+
     {
-        image: "https://res.cloudinary.com/df9vmrdna/image/upload/v1714312020/SPARK%20Jewellery/collections/chains_vcl4ar.webp",
-        name: "Chains",
+        image: watches,
+        name: "Smart Watches",
     },
-    {
-        image: "https://res.cloudinary.com/df9vmrdna/image/upload/v1714291880/SPARK%20Jewellery/collections/mangalsutras_hzykud.webp",
-        name: "Mangalsutras",
-    },
-    {
-        image: "https://res.cloudinary.com/df9vmrdna/image/upload/v1714291882/SPARK%20Jewellery/collections/nosepins_w8vuve.webp",
-        name: "Nose Pins",
-    },
-    {
-        image: "https://res.cloudinary.com/df9vmrdna/image/upload/v1714291899/SPARK%20Jewellery/collections/toerings_djresk.webp",
-        name: "Toe Rings",
-    },
+
+    
 ];
 
 
