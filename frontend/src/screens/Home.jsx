@@ -6,7 +6,7 @@ import { getProducts } from "../actions/ProductAction";
 import { useDispatch, useSelector } from "react-redux";
 import toast from "react-hot-toast";
 import Loader from "../components/Loader";
-import banner from "../assets/electronics-1.jpeg";
+import banner from "../assets/homebanner.webp";
 import banner1 from "../assets/b1.jpg";
 import banner2 from "../assets/b2.jpg";
 const images = [banner];
@@ -91,51 +91,12 @@ const Home = () => {
                     <div className="flex items-center sm:justify-between justify-center gap-8 my-8 sm:flex-nowrap flex-wrap">
                     {
                         specialBanners.map((item, index) => (
-                            <div key={index} className="sm:w-1/3">
+                            <div key={index} className="">
                                 <img src={item.image} alt={"img"} className="w-full h-full object-cover" />
                             </div>
                         ))
                     }
                     </div>
-
-                    {/* Most Ordered */}
-                    {/* <div className="my-8">
-                        <div className="flex items-center justify-between">
-                            <h1 className="text-3xl font-light">Most Ordered</h1>
-                            <Link to={"/products"} className="text-sm font-normal text-gray-500 cursor-pointer hover:underline">View All</Link>
-                        </div>
-                        <div className="flex items-center justify-between gap-8 py-8">
-                        {
-                            products && products.map((item, index) => (
-                                <div key={item._id} className="rounded-lg shadow-md overflow-hidden bg-white w-1/4">
-                                    <div className="relative">
-                                        <img className="w-full h-48 object-cover" src={item.images[0].imageUrl} alt={item.images[0].imageUrl} />
-                                        <div className="shadow flex items-center justify-center bg-gray-100 text-sm rounded-full absolute bottom-0 left-0 m-4 px-2">
-                                            <span>{item.ratingsCount}</span>
-                                            <FaStar className="text-yellow-500" />
-                                            <span className="px-1">|</span>
-                                            <span>{item.reviewsCount}</span>
-                                        </div>
-                                    </div>
-                                    <div className="p-4">
-                                        <h5 className="text-xl font-light tracking-tight text-gray-900 text-nowrap overflow-hidden text-ellipsis">
-                                        {item.name}
-                                        </h5>
-                                        <p className="mt-1 text-md font-bold text-gray-700">Rs {item.discountPrice.toFixed(2)}</p>
-                                    </div>
-                                    <div className="flex items-center justify-between px-4 pb-2">
-                                        <Link
-                                        to={`/product/${item._id}`}
-                                        className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-700 rounded-lg hover:bg-red-800"
-                                        >
-                                        View Details
-                                        </Link>
-                                    </div>
-                                </div>
-                            ))
-                        }
-                        </div>
-                    </div> */}
 
                 </div>
             </div>
