@@ -1,10 +1,7 @@
 import React, { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import boy from "../assets/profile/person.png";
-import girl from "../assets/profile/girl.png";
-import man from "../assets/profile/man.png";
-import woman from "../assets/profile/woman.png";
+import person from "../assets/profile/person.png";
 import { MdLogout, MdOutlineUpdate } from "react-icons/md";
 import { IoIosList } from "react-icons/io";
 import { RxDashboard } from "react-icons/rx";
@@ -47,7 +44,7 @@ const Account = () => {
         {user && <div className="w-full text-gray-900 sm:px-0 px-4">
         <div className="max-w-[1200px] mx-auto sm:grid sm:grid-cols-4 block gap-8 py-4">
             <div className="col-span-1">
-                <img className="w-full p-6 object-contain rounded-full bg-white" src={man} alt="img" />
+                <img className="w-full p-6 object-contain rounded-full bg-white" src={person} alt="img" />
                 <Link to={"/account/profile/update"} className="flex items-center justify-center rounded shadow text-sm py-2 my-2 font-semibold bg-gray-50 hover:bg-gray-100 duration-150 ease-in-out">Update Profile</Link>
                 <Link to={"/account/password/update"} className="flex items-center justify-center rounded shadow text-sm py-2 my-2 font-semibold bg-red-700 text-white hover:bg-red-800 duration-150 ease-in-out">Update Password</Link>
             </div>
@@ -69,30 +66,6 @@ const Account = () => {
                         <label className="text-sm font-semibold" htmlFor="phoneNumber">Phone Number</label>
                         <input readOnly value={user?.phoneNumber} className="mt-2 bg-gray-50 w-full text-sm px-2 py-2 outline outline-1 outline-gray-300 rounded block" id="phoneNumber" type="number" />
                     </div>
-
-                    {/* <div className="w-full my-3">
-                        <label className="text-sm font-semibold" htmlFor="gender">Gender</label>
-                        <div className="flex items-center w-full">
-                            <div className="mr-4">
-                                <input checked disabled value={"Male"} className="mt-2 text-sm font-medium p-2 text-gray-900" name="gender" id="male" type="radio" />
-                                <label className="ml-2 text-sm" htmlFor="male">Male</label>
-                            </div>
-                            <div className="ml-4">
-                                <input disabled value={"Female"} className="mt-2 text-sm font-medium p-2 text-gray-900" name="gender" id="female" type="radio" />
-                                <label className="ml-2 text-sm" htmlFor="female">Female</label>
-                            </div>
-                        </div>
-                    </div> */}
-
-                    {/* <div className="w-full my-3">
-                        <label className="text-sm font-semibold" htmlFor="age">Age</label>
-                        <input readOnly value={user.age} className="mt-2 bg-gray-50 w-full text-sm px-2 py-2 outline outline-1 outline-gray-300 rounded block" id="age" type="number" />
-                    </div> */}
-
-                    {/* <div className="w-full my-3">
-                        <label className="text-sm font-semibold" htmlFor="role">Role</label>
-                        <input readOnly value={user?.role} className="mt-2 bg-gray-50 w-full text-sm px-2 py-2 outline outline-1 outline-gray-300 rounded block" id="role" type="text" />
-                    </div> */}
                 
                 </form>
             </div>
