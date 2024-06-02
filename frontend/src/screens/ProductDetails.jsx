@@ -68,13 +68,13 @@ const ProductDetails = () => {
                         </div>
 
                         {!product.discountPrice ? <div className="flex items-center gap-2">
-                            <p className="text-red-700 text-3xl font-bold">Rs {product.price}</p>
+                            <p className="text-blue-600 text-3xl font-bold">Rs {product.price}</p>
                             <span className="relative">
                                 <IoInformationCircleOutline className="text-sm text-gray-500 cursor-pointer" />
                                 <span className="bg-gray-300 absolute bottom-4 rounded w-max px-3 left-0 opacity-0">Inclusive of all taxes.</span>
                             </span>
                         </div> :
-                        <div className="flex items-center gap-2 p-4 rounded bg-gradient-to-br from-red-500 to-red-900">
+                        <div className="flex items-center gap-2 p-4 rounded bg-gradient-to-br from-blue-500 to-blue-700">
                             <span className="text-white text-3xl font-semibold">Rs {product.discountPrice}</span> 
                             <span className="text-gray-200 text-sm line-through">Rs {product.price}</span>
                             <span className="relative">
@@ -108,7 +108,7 @@ const ProductDetails = () => {
                             </div>
 
                             <div className="w-full my-3">
-                                <button onClick={handleAddToCart} className="active:bg-red-900 active:scale-95 w-full rounded text-sm py-2 font-semibold bg-red-700 hover:bg-red-800 text-white duration-150 ease-in-out flex items-center justify-center gap-2">
+                                <button onClick={handleAddToCart} className="w-full rounded text-sm py-2 font-semibold bg-cyan-400 hover:bg-cyan-500 text-white duration-150 ease-in-out flex items-center justify-center gap-2">
                                     <IoCartOutline size={20} />
                                     <span>Add to Cart</span>
                                 </button>
@@ -152,7 +152,7 @@ const ProductDetails = () => {
                         }
                     </div>
                     {product.reviews && product.reviews.length > 8 ? <div className="my-3 grid place-items-center">
-                        <button type="submit" className="rounded text-sm px-4 py-2 font-semibold bg-red-700 text-white hover:bg-red-800 duration-150 ease-in-out flex items-center justify-center gap-2">
+                        <button type="submit" className="rounded text-sm px-4 py-2 font-semibold bg-cyan-400 text-white hover:bg-cyan-500 duration-150 ease-in-out flex items-center justify-center gap-2">
                             <span>Load More Reviews</span>
                         </button>
                     </div> : ""}

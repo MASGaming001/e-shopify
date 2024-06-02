@@ -52,9 +52,9 @@ const Dashboard = () => {
         {productLoading === true && orderLoading === true && userLoading === true ? <Loader /> : 
         <div>
             {/* <MetaData title="Dashboard" /> */}
-            <h1 className="inline-block text-2xl font-bold text-red-700">Dashboard</h1>
+            <h1 className="inline-block text-2xl font-bold text-black">Dashboard</h1>
 
-            <div className="py-6 shadow rounded-3xl text-center my-4 bg-gradient-to-r from-red-900 to-red-700 text-white">
+            <div className="py-6 shadow rounded-3xl text-center my-4 bg-gradient-to-r from-grey-50 to-white text-black">
                 <p className="text-md">Total Order Amount</p>
                 <h2 className="text-3xl font-bold">{orders.reduce((acc, item) => {
                     return (item.orderStatus !== "Cancelled") ? acc + (item.totalPrice) : acc
@@ -62,15 +62,15 @@ const Dashboard = () => {
             </div>
 
             <div className="grid grid-cols-3 gap-4 my-4 text-white">
-                <div className="py-6 shadow rounded-3xl text-center bg-gradient-to-r from-stone-900 to-stone-700">
+                <div className="py-6 shadow rounded-3xl text-center bg-gradient-to-r from-cyan-400 to-cyan-500">
                     <p className="text-md">Total Orders</p>
                     <h2 className="text-3xl font-bold">{ordersCount}</h2>
                 </div>
-                <div className="py-6 shadow rounded-3xl text-center bg-gradient-to-r from-stone-700 to-stone-600">
+                <div className="py-6 shadow rounded-3xl text-center bg-gradient-to-r from-cyan-500 to-cyan-500">
                     <p className="text-md">Total Users</p>
                     <h2 className="text-3xl font-bold">{usersCount}</h2>
                 </div>
-                <div className="py-6 shadow rounded-3xl text-center bg-gradient-to-r from-stone-600 to-stone-900">
+                <div className="py-6 shadow rounded-3xl text-center bg-gradient-to-r from-cyan-500 to-cyan-400">
                     <p className="text-md">Total Products</p>
                     <h2 className="text-3xl font-bold">{productsCount}</h2>
                 </div>

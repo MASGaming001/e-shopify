@@ -94,7 +94,7 @@ const CreateProduct = () => {
         <>
             <MetaData title="Create Product" />
 
-            <h1 className="inline-block text-2xl font-bold text-red-700">Create Product</h1>
+            <h1 className="inline-block text-2xl font-bold text-black">Create Product</h1>
 
             <form encType="multipart/form-data" onSubmit={handleSubmit} className="md:w-full sm:w-full w-full md:px-0 px-8 flex flex-col items-center justify-center">
                 <div className="w-full my-3">
@@ -177,7 +177,7 @@ const CreateProduct = () => {
                 </div>
 
                 <div className="w-1/6 my-3 self-start">
-                    <button disabled={loading === true ? true : false} onClick={handleSubmit} type="submit" className="w-full rounded-md text-sm py-2 font-semibold bg-red-700 text-white hover:bg-red-800 duration-150 ease-in-out">{
+                    <button disabled={loading === true ? true : false} onClick={handleSubmit} type="submit" className="w-full rounded-md text-sm py-2 font-semibold bg-cyan-400 text-white hover:bg-cyan-500 duration-150 ease-in-out">{
                         loading ? <ImSpinner8 className="animate-spin mx-auto text-xl" /> : "Create"
                     }</button>
                 </div>

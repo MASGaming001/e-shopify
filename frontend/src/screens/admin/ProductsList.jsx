@@ -52,7 +52,7 @@ const ProductsList = () => {
     return (
         <div>
             <MetaData title="Products" />
-            <h1 className="inline-block text-2xl font-bold text-red-700">Products</h1>
+            <h1 className="inline-block text-2xl font-bold text-black">Products</h1>
             <div className="w-1/3 flex my-4">
                 <input
                 type="text"

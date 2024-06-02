@@ -35,7 +35,7 @@ const OrdersList = () => {
     return (
         <div>
             <MetaData title="Orders" />
-            <h1 className="inline-block text-2xl font-bold text-red-700">Orders</h1>
+            <h1 className="inline-block text-2xl font-bold text-black">Orders</h1>
             <div className="w-1/3 flex my-4">
                 <input
                 type="text"
@@ -66,9 +66,7 @@ const OrdersList = () => {
                         <td className="px-6 py-4 whitespace-nowrap">Rs {order.totalPrice}</td>
                         <td className={`px-6 py-4 whitespace-nowrap ${order.orderStatus === "Delivered" ? "text-green-600" : order.orderStatus === "Shipped" ? "text-blue-600" : order.orderStatus === "Processing" ?  "text-orange-600" : order.orderStatus === "Cancelled" ? "text-red-600" : ""}`}>{order.orderStatus}</td>
                         <td className="px-6 py-4 whitespace-nowrap">
-                        <button onClick={() => navigate(`/account/admin/order/${order._id}/update`)} className="text-slate-700 hover:text-slate-800"><MdEdit /></button>
-                        {/* <button className="text-red-700 hover:text-red-800 ml-2" onClick={() => setShowDeleteModal(true)}><MdDelete /></button>
-                        <DeleteModal title={"Delete"} message={"Are you sure you want to delete this product?"} isModalOpen={showDeleteModal} closeModal={() => setShowDeleteModal(false)} id={product._id} handleDelete={() => handleDeleteProduct(product._id)} /> */}
+                            <button onClick={() => navigate(`/account/admin/order/${order._id}/update`)} className="text-slate-700 hover:text-slate-800"><MdEdit /></button>
                         </td>
                     </tr>
                     ))
