@@ -9,11 +9,11 @@ import Loader from "../components/Loader";
 import banner from "../assets/homebanner.webp";
 import banner1 from "../assets/b1.jpg";
 import banner2 from "../assets/b2.jpg";
-import mobiles from "../assets/mobiles.webp";
-import tablets from "../assets/tablets.webp";
-import earbuds from "../assets/earbuds.webp";
-import laptops from "../assets/laptops.webp";
-import watches from "../assets/watches.webp";
+import mobiles from "../assets/collections/mobiles.webp";
+import tablets from "../assets/collections/tablets.webp";
+import earbuds from "../assets/collections/earbuds.webp";
+import laptops from "../assets/collections/laptops.webp";
+import watches from "../assets/collections/watches.webp";
 const images = [banner];
 
 const specialBanners = [
