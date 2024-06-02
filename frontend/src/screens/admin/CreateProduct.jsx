@@ -8,7 +8,7 @@ import toast from "react-hot-toast";
 import { ADMIN_CREATE_PRODUCT_RESET } from "../../constants/ProductConstant";
 import MetaData from "../../components/MetaData";
 
-const collections = ["Pendants", "Rings", "Earrings", "Bracelets", "Chains", "Mangalsutras", "Nose Pins", "Toe Rings"];
+const collections = ["Mobiles", "Tablets", "Earbuds", "Watches", "Laptops"];
 
 const CreateProduct = () => {
     const { loading, error, success } = useSelector((state) => state.productCreateReducer);
@@ -108,10 +108,6 @@ const CreateProduct = () => {
                 </div>
 
                 <div className="flex justify-between w-full gap-4">
-                    <div className="flex-1 my-3">
-                        <label className="text-sm font-semibold" htmlFor="metal">Metal</label>
-                        <input value={metal} onChange={(e) => handleChange(e)} className="mt-2 bg-gray-50 w-full text-sm px-2 py-2 outline outline-1 outline-gray-300 focus:bg-white focus:outline-2 focus:outline-gray-900 rounded block" id="metal" name="metal" type="text" placeholder="Enter Metal" />
-                    </div>
                     <div className="flex-1 my-3">
                         <label className="text-sm font-semibold" htmlFor="collection">Collection</label>
                         <select required value={collection} onChange={(e) => handleChange(e)} className="mt-2 bg-gray-50 w-full text-sm px-2 py-2 outline outline-1 outline-gray-300 focus:bg-white focus:outline-2 focus:outline-gray-900 rounded block" name="collection" id="collection">
