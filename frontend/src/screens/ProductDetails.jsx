@@ -87,7 +87,7 @@ const ProductDetails = () => {
 
                         <div className="flex items-center gap-4 text-lg">
                             <GoShieldCheck />
-                            <span>8-Month Warranty</span>
+                            <span>1-Year Warranty</span>
                         </div>
                         <div className="flex items-center gap-4 text-lg">
                             <BsAward />
