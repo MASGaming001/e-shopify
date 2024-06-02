@@ -39,7 +39,7 @@ const Login = () => {
     return (
         <div className="w-full py-8 flex flex-col items-center justify-center">
             <form onSubmit={handleSubmit} className="md:w-1/4 sm:w-1/2 w-full md:px-0 px-8 flex flex-col items-center justify-center">
-                <h1 className="text-4xl font-bold mb-4">Hello Buddy!</h1>
+                <h1 className="text-4xl font-bold mb-4">Login to Your Account</h1>
                 <div className="w-full my-3">
                     <label className="text-sm font-semibold" htmlFor="email">Email</label>
                     <input value={email} onChange={(e) => setEmail(e.target.value)} className="mt-2 bg-gray-50 w-full text-sm px-2 py-2 outline outline-1 outline-gray-300 focus:bg-white focus:outline-2 focus:outline-gray-900 rounded block" id="email" type="email" placeholder="Enter email" />
@@ -52,14 +52,14 @@ const Login = () => {
                     <Link to={"/password/forgot"} className="text-gray-600 font-medium text-sm text-right cursor-pointer">Forgot Password?</Link>
                 </div>
                 <div className="w-full my-3">
-                    <button disabled={loading === true ? true : false} onClick={handleSubmit} type="submit" className="w-full rounded-md text-sm py-2 font-semibold bg-red-700 text-white hover:bg-red-800 duration-150 ease-in-out">{
+                    <button disabled={loading === true ? true : false} onClick={handleSubmit} type="submit" className="w-full rounded-md text-sm py-2 font-semibold bg-cyan-400 text-black hover:bg-cyan-500 duration-150 ease-in-out">{
                         loading === true ? <ImSpinner8 className="animate-spin mx-auto text-xl" /> : "Login"
                     }</button>
                 </div>
             </form>
             <p className="text-gray-600 font-medium text-sm text-center">OR</p>
             <div className="w-full my-2 text-center">
-                <p className="text-sm text-gray-600 font-medium">Not a member yet? <Link to={"/register"} className="text-red-700 cursor-pointer">Create an account</Link></p>
+                <p className="text-sm text-gray-600 font-medium">Not a member yet? <Link to={"/register"} className="text-cyan-500 cursor-pointer">Create an account</Link></p>
             </div>
         </div>
     )
