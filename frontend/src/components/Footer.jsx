@@ -50,7 +50,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div>
-                    <p className="text-sm text-gray-50 mt-4">Copyright &copy; 2021 SPARK Jewellery Private Ltd.</p>
+                    <p className="text-sm text-black mt-4">Copyright &copy; 2024 E-Shopify</p>
                 </div>
             </div>
         </div>

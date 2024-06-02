@@ -6,18 +6,17 @@ import { getProducts } from "../actions/ProductAction";
 import { useDispatch, useSelector } from "react-redux";
 import toast from "react-hot-toast";
 import Loader from "../components/Loader";
-
-const images = ["https://www.giva.co/cdn/shop/files/Hero_web_Bestsellers-min.jpg?v=1714041427&width=3000", "https://www.giva.co/cdn/shop/files/Hero_web_Gold_Jewellery_2_-min.jpg?v=1714163504&width=3000" ];
+import banner from "../assets/electronics-1.jpeg";
+import banner1 from "../assets/b1.jpg";
+import banner2 from "../assets/b2.jpg";
+const images = [banner];
 
 const specialBanners = [
     {
-        image: "https://res.cloudinary.com/df9vmrdna/image/upload/v1714287618/SPARK%20Jewellery/specialBanners/t94chsdyaehh21s2myyw.webp",
+        image: banner1,
     },
     {
-        image: "https://res.cloudinary.com/df9vmrdna/image/upload/v1714287618/SPARK%20Jewellery/specialBanners/i6vo1buaiy77osedm7s4.webp",
-    },
-    {
-        image: "https://res.cloudinary.com/df9vmrdna/image/upload/v1714287616/SPARK%20Jewellery/specialBanners/dazy8jthneoibpwmcgz3.webp",
+        image: banner2,
     },
 ];
 

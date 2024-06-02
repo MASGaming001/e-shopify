@@ -30,7 +30,7 @@ const Header = () => {
                     <IoSearchOutline onClick={handleSearch} className="absolute right-3 top-1/2 -translate-y-1/2 cursor-pointer" size={20} />
                 </form>
                 <div className="flex items-center justify-center">
-                    {!user && <Link to={"/login"} className="mx-4 cursor-pointer border border-black rounded shadow text-black px-4 py-1 hover:bg-cyan-700 hover:text-white transition duration-300">Login</Link>}
+                    {!user && <Link to={"/login"} className="mx-4 cursor-pointer border border-black rounded shadow text-black px-4 py-1 hover:bg-cyan-400 transition duration-300">Login</Link>}
                     {user && <Link to={"/account/profile"} className="mx-4 cursor-pointer hover:scale-110"><IoPersonOutline size={26} /></Link>}
                     <Link to={"/cart"} className="mx-4 cursor-pointer hover:scale-110"><IoCartOutline size={26} /></Link>
                 </div>

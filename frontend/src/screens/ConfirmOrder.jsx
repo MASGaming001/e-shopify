@@ -21,7 +21,7 @@ const ConfirmOrder = () => {
     const landmark = shippingInfo.landmark;
     const [paymentMethod, setPaymentMethod] = useState("Card");
     const [loading, setLoading] = useState(false);
-    const baseUrl = "https://sparkjewellery.onrender.com";
+    const baseUrl = "https://e-shopify-22tz.onrender.com";
 
     const handleSubmit = async () => {
 
@@ -46,8 +46,8 @@ const ConfirmOrder = () => {
                 key: keyId, 
                 amount: order.amount,
                 currency: "INR",
-                name: "SPARK Jewellery",
-                description: "An e-commerce jewellery shop.",
+                name: "E-Shopify",
+                description: "An e-commerce electronic store.",
                 image: logo,
                 order_id: order.id,
                 handler: async function (response) {
@@ -114,10 +114,10 @@ const ConfirmOrder = () => {
                     contact: user?.phoneNumber
                 },
                 notes: {
-                    address: "SPARK Jewellery Private Ltd."
+                    address: "E-Shopify"
                 },
                 theme: {
-                    color: "#781717"
+                    color: "#00FFFF"
                 }
             };
 
@@ -167,7 +167,6 @@ const ConfirmOrder = () => {
                                         </div>
                                         <p className="text-gray-900 text-lg">
                                             <span className="font-medium">₹{product.discountPrice}</span>
-                                            {/* <span className="text-gray-400 text-[14px] font-medium line-through mx-2">Rs {product.price}</span> */}
                                         </p>
                                     </div>
                                 </div>
@@ -212,48 +211,7 @@ const ConfirmOrder = () => {
                         </div>
 
                         <div className="">
-                        {/* <h2 className="text-xl text-gray-900 font-semibold">Payment</h2> */}
-                            {/* <div className="w-full my-3">
-                                <label className="text-sm font-semibold" htmlFor="paymentMethod">Payment Method</label>
-                                <div className="flex items-center justify-between mt-2 rounded border-red-700 border text-sm font-semibold">
-                                <label className={`flex-1 py-2 rounded-l cursor-pointer ${paymentMethod === "Cash on Delivery" ? "bg-red-700 text-white" : "bg-gray-50 text-red-700"}`}>
-                                        <input onClick={(e) => setPaymentMethod(e.target.value)} checked={paymentMethod === "Cash on Delivery"} value="Cash on Delivery" type="radio" name="paymentMethod" className="hidden" />
-                                        <p className="text-center">
-                                        Cash on Delivery
-                                        </p>
-                                        </label>
-                                        <label className={`flex-1 py-2 rounded-r cursor-pointer ${paymentMethod === "Card" ? "bg-red-700 text-white" : "bg-gray-50 text-red-700"}`}>
-                                        <input onClick={(e) => setPaymentMethod(e.target.value)} checked={paymentMethod === "Card"} value="Card" type="radio" name="paymentMethod" className="hidden" />
-                                        <p className="text-center">
-                                        Credit/Debit Card
-                                        </p>
-                                        </label>
-                                        </div>
-                                    </div> */}
-
-                            {/* <div className={`w-full my-3 transition-all duration-1000 ease-in-out ${paymentMethod === "cod" ? "hidden" : ""}`}>
-                                <div className="w-full my-3">
-                                <label className="text-sm font-semibold" htmlFor="cardNumber">Card Number</label>
-                                <input value={cardNumber} onChange={(e) => setCardNumber(e.target.value)} className="no-spinner mt-2 bg-gray-50 w-full text-sm px-2 py-2 outline outline-1 outline-gray-300 focus:bg-white focus:outline-2 focus:outline-gray-900 rounded block" id="cardNumber" type="number" placeholder="XXXX XXXX XXXX XXXX" />
-                                </div>
-                                
-                                <div className="flex justify-between w-full gap-4 my-3">
-                                    <div className="w-1/2">
-                                    <label className="text-sm font-semibold" htmlFor="cardExpiry">Expiry</label>
-                                    <input value={cardExpiry} onChange={(e) => setCardExpiry(e.target.value)} className="mt-2 bg-gray-50 w-full text-sm px-2 py-2 outline outline-1 outline-gray-300 focus:bg-white focus:outline-2 focus:outline-gray-900 rounded block" id="cardExpiry" type="text" placeholder="XX/XX" />
-                                    </div>
-                                    <div className="w-1/2">
-                                        <label className="text-sm font-semibold" htmlFor="cardCVV">CVV</label>
-                                        <input value={cardCVV} onChange={(e) => setCardCVV(e.target.value)} className="no-spinner mt-2 bg-gray-50 w-full text-sm px-2 py-2 outline outline-1 outline-gray-300 focus:bg-white focus:outline-2 focus:outline-gray-900 rounded block" id="cardCVV" type="number" placeholder="***" />
-                                        </div>
-                                        </div>
-                                        
-                                        <div className="w-full my-3">
-                                        <label className="text-sm font-semibold" htmlFor="cardHolderName">Card Holder Name</label>
-                                        <input value={cardHolderName} onChange={(e) => setCardHolderName(e.target.value)} className="no-spinner mt-2 bg-gray-50 w-full text-sm px-2 py-2 outline outline-1 outline-gray-300 focus:bg-white focus:outline-2 focus:outline-gray-900 rounded block" id="cardHolderName" type="text" placeholder="RAHUL SHARMA" />
-                                        </div>
-                                    </div> */}
-
+                       
                             <div className="w-full my-3">
                                 <button disabled={loading === true ? true : false} onClick={handleSubmit} type="submit" className="w-full rounded text-sm py-2 font-semibold bg-red-700 text-white hover:bg-red-800 duration-150 ease-in-out">{
                                     loading === true ? <ImSpinner8 className="animate-spin mx-auto text-xl" /> : paymentMethod === "Card" ? "Pay and Order" : "Order"
