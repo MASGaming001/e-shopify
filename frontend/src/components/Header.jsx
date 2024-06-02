@@ -22,7 +22,7 @@ const Header = () => {
     }
 
     return(
-        <div className="z-20 w-full bg-gray-50 text-gray-900 sticky top-0 left-0 shadow">
+        <div className="z-20 w-full bg-cyan-400 text-gray-900 sticky top-0 left-0 shadow">
             <div className="sm:h-[10vh] h-[8vh] max-w-[1200px] m-auto flex items-center justify-between md:px-0 px-2">
                 <Link to={"/"} className="h-2/3"><img className="h-full object-cover" src={logo} alt="Brand Logo" /></Link>
                 <form onSubmit={handleSearch} className="md:flex flex-grow items-center justify-center hidden relative mx-12">

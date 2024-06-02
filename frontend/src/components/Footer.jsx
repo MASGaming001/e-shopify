@@ -36,21 +36,14 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="grid md:grid-cols-2 grid-cols-1 gap-6 mt-4">
-                    <div className="md:col-span-1 col-span-1">
-                        <label className="text-xl font-light block leading-10">Subscribe for exclusive offers & updates</label>
-                        <div className="relative">
-                            <input value={keyword} onChange={(e) => setKeyword(e.target.value)} className="bg-gray-50 w-full text-md px-2 py-2 outline outline-1 outline-gray-300 focus:bg-white focus:outline-2 focus:outline-gray-900 rounded block" id="email" type="email" placeholder="Email address" />
-                            <FaArrowRight className="absolute right-3 top-1/2 -translate-y-1/2 cursor-pointer" size={20} />
-                        </div>
+                    <div className="col-span-1">
+                        <p className="text-sm text-black mt-4">Copyright &copy; 2024 E-Shopify</p>
                     </div>
                     <div className="flex items-center md:justify-end col-span-1 gap-4">
                         <Link className="cursor-pointer hover:scale-110"><FaFacebook size={26} /></Link>
                         <Link className="cursor-pointer hover:scale-110"><FaInstagram size={26} /></Link>
                         <Link className="cursor-pointer hover:scale-110"><FaYoutube size={26} /></Link>
                     </div>
-                </div>
-                <div>
-                    <p className="text-sm text-black mt-4">Copyright &copy; 2024 E-Shopify</p>
                 </div>
             </div>
         </div>

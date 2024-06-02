@@ -5,7 +5,7 @@ import dummyImage from "../assets/dummyImage.jfif";
 
 const ProductCard = ({ product }) => {
     return(
-        <div key={product.id} className="rounded-lg shadow-md overflow-hidden bg-white">
+        <Link to={`/product/${product._id}`} key={product.id} className="rounded-lg shadow-md overflow-hidden bg-white">
             <div className="relative">
                 <img className="w-full h-48 object-cover" src={product.images[0].imageUrl} alt={dummyImage} />
                 <div className="shadow flex items-center justify-center bg-gray-100 text-sm rounded-full absolute bottom-0 left-0 m-4 px-2">
@@ -22,14 +22,8 @@ const ProductCard = ({ product }) => {
                 <p className="mt-1 text-md font-bold text-gray-700">Rs {product.discountPrice.toFixed(2)}</p>
             </div>
             <div className="flex products-center justify-between px-4 pb-2">
-                <Link
-                to={`/product/${product._id}`}
-                className="inline-flex products-center px-3 py-2 text-[12px] font-medium text-center text-white bg-red-700 rounded-lg hover:bg-red-800"
-                >
-                View Details
-                </Link>
             </div>
-        </div>
+        </Link>
     )
 }
 
