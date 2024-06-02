@@ -70,7 +70,7 @@ const OrderDetails = () => {
                             <div className="col-span-1 bg-gray-50 shadow p-4">
                                 <div className="flex items-center justify-between">
                                     <h2 className="text-xl font-semibold mb-2">Order Status</h2>
-                                    {order?.orderStatus === "Processing" && <button disabled={loading ? true : false} onClick={handleCancelOrder} type="submit" className="active:scale-95 rounded text-sm py-1 px-4 font-semibold bg-red-700 text-white hover:bg-red-800 duration-150 ease-in-out">
+                                    {order?.orderStatus === "Processing" && <button disabled={loading ? true : false} onClick={handleCancelOrder} type="submit" className="active:scale-95 rounded text-sm py-1 px-4 font-semibold bg-cyan-400 text-white hover:bg-cyan-500 duration-150 ease-in-out">
                                             Cancel Order  
                                     </button>}
                                 </div>
@@ -82,10 +82,6 @@ const OrderDetails = () => {
                                     <p className="text-sm">
                                         {order?.orderStatus === "Delivered" ? "Your order has been delivered." : order?.orderStatus === "Shipped" ? "Your order has been shipped." : order?.orderStatus === "Cancelled" ? "Your order has been cancelled." : order?.orderStatus === "Processing" ? "Your order is under processing." : "" }
                                     </p>
-                                    {/* {order?.orderStatus === "Delivered" && <button className="mt-2 rounded text-sm font-semibold text-red-700 hover:underline duration-150 ease-in-out flex items-center gap-2">
-                                        <FaStar />
-                                        <Link to={`/product/${product._id}/review/write`}>Rate & Review Product</Link>
-                                    </button>} */}
                                 </div>                   
                             </div>
                             <div className="col-span-1 bg-gray-50 shadow p-4">

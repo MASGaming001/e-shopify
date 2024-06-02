@@ -100,7 +100,7 @@ const Cart = () => {
                                 </p>
                             </div>
 
-                            <button onClick={handleCheckout} type="submit" className="active:bg-red-900 active:scale-95 w-full rounded-md text-sm py-2 font-semibold bg-red-700 text-white hover:bg-red-800 duration-150 ease-in-out">{
+                            <button onClick={handleCheckout} type="submit" className="active:bg-cyan-500 active:scale-95 w-full rounded-md text-sm py-2 font-semibold bg-cyan-400 text-white hover:bg-cyan-500 duration-150 ease-in-out">{
                                 loading ? <ImSpinner8 className="animate-spin mx-auto text-xl" /> : "Checkout"
                             }</button>
                         </div>
