@@ -43,21 +43,6 @@ const Products = () => {
                 <div className="flex justify-between items-center mb-4">
                     <h1 className="sm:text-xl font-semibold">{`Products Count - ${productsCount}`}</h1>
                     <div className="flex items-center gap-4">
-                        {/* <div>
-                            <label className="text-sm" htmlFor="sort">Collection
-                            <select className="ml-2 px-2 py-1 border rounded-md outline-none focus:border-slate-800" name="sort" id="sort" value={collection} onChange={(e) => setCollection(e.target.value)}>
-                                <option value="">None</option>
-                                <option value="pendants">Pendants</option>
-                                <option value="rings">Rings</option>
-                                <option value="earrings">Earrings</option>
-                                <option value="bracelets">Bracelets</option>
-                                <option value="chains">Chains</option>
-                                <option value="mangalsutras">Mangalsutras</option>
-                                <option value="nosePins">Nose Pins</option>
-                                <option value="toeRings">Toe Rings</option>
-                                </select>
-                                </label>
-                            </div> */}
                         <div>
                             <label className="text-sm" htmlFor="sort">Sort By
                             <select className="ml-2 px-2 py-1 border rounded-md outline-none focus:border-slate-800" name="sort" id="sort" value={sort} onChange={(e) => setSort(e.target.value)}>
