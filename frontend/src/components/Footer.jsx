@@ -29,7 +29,7 @@ const Footer = () => {
                         <h2 className="text-xl font-semibold pb-2">Contact Us</h2>
                         <ul>
                             <li className="leading-7">GameTech-Hub</li>
-                            <li className="leading-7">First Floor, Raghunath Complex, Mumbai 421305</li>
+                            <li className="leading-7">#187,R&D complex, Bengaluru , 560029</li>
                             <li className="leading-7"> - gametechhub@gmail.com</li>
                             <li className="leading-7"> - 9890032046(10:30 AM to 10:30 PM)</li>
                         </ul>
