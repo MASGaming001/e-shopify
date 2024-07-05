@@ -33,7 +33,7 @@ const collections = [
 
     {
         image: tablets,
-        name: "Tablets",
+        name: "Controllers",
     },
 
     {
@@ -43,12 +43,12 @@ const collections = [
 
     {
         image: earbuds,
-        name: "Earbuds",
+        name: "Headsets",
     },
 
     {
         image: watches,
-        name: "Smart Watches",
+        name: "Chairs",
     },
 
     
